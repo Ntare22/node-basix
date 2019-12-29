@@ -1,0 +1,24 @@
+{
+  "name": "node-basix",
+  "version": "1.0.0",
+  "description": "A refresher course on node basics by Mosh Hamedani",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ntare22/node-basix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ntare22/node-basix/issues"
+  },
+  "homepage": "https://github.com/Ntare22/node-basix#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^14.3.1"
+  }
+}
