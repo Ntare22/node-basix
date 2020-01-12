@@ -1,12 +1,26 @@
+const config = require('config')
+const morgan = require('morgan')
+const helmet = require('helmet')
 const Joi = require('joi');
 const express = require('express');
 const app = express();
 const logger = require('./logger');
-const authenticate = require('./authenicate')
+const authenticate = require('./authenicate');
+
+// Configuration
+console.log('Application Name:' + config.get('name'));
+console.log('Application Host:' + config.get('mail.host'));
+console.log('Application Password:' + config.get('mail.password'));
+
+if (app.get('env') === 'development') {
+  app.use(morgan('tiny'));
+  console.log('Morgan enabled...')
+}
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+app.use(helmet());
 
 app.use(logger);
 app.use(authenticate);
