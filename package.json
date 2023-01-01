@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Ntare22/node-basix#readme",
   "dependencies": {
-    "config": "^3.2.4",
+    "config": "^3.3.8",
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
